@@ -7,7 +7,7 @@ public class PlatformColorChanging : MonoBehaviour
 {
     private SpriteRenderer rend;
 
-    void Start()
+    void Awake()
     {
         rend = GetComponent<SpriteRenderer>();
         rend.material.color = new Color(Random.value, Random.value, Random.value, 1.0f);
